@@ -1,0 +1,9 @@
+{
+    "name": "Connect HTTP Signature Example"
+  , "version": "0.0.1"
+  , "dependencies": {
+      "express": "2.5.4"
+    , "jade": ">= 0.0.1"
+    , "connect-http-signature": ">= 0.1.0"
+  }
+}
