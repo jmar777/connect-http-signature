@@ -19,7 +19,7 @@ app.configure(function(){
 	app.use(express.methodOverride());
 	// attempt to verify signatures on all incoming requests
 	app.use(httpSignature.verify({
-		pub: require('fs').readFileSync(__dirname + '/rsa_public.pem')
+		pub: require('fs').readFileSync(__dirname + '/rsa_public.pem', 'ascii')
 	}));
 	app.use(app.router);
 	app.use(express.static(__dirname + '/public'));
