@@ -1,4 +1,3 @@
-
 # Connect HTTP Signature
 
 connect-http-signature is a [Connect](https://github.com/senchalabs/connect) middleware wrapper for
@@ -6,8 +5,8 @@ Joyent's [HTTP Signature reference implementation](https://github.com/joyent/nod
 
 The connect-http-signature module exports two middleware components: `verify` and `gateway`. These
 components separate the logic of _verifying a request's signature_, and the decision of _accepting or
-rejecting a request_ based on that verification. This separation provides for a simple but flexible
-solution to encorcing request authentication.
+rejecting a request_ based on that verification. This separation provides a simple but flexible
+solution to enforcing request authentication.
 
 ## Installation
 
@@ -26,7 +25,9 @@ meet the needs of a range of authentication requirements.
 
 The `verify` middleware component simply verifies whether or not the request has a valid HTTP Signature.
 The request object is decorated with a `signature` property, that can be inspected by middleware components
-later on for authorization decisions.  The only required property for `verify`'s options is `pub`
+later on for authorization decisions.  The `verify` middleware component only has one required option: `pub`.
+This property specificies the public key to use for request verification. Any additional options will be passed
+to node-http-signature's `parseRequest` method.
 
 Basic usage:
 
