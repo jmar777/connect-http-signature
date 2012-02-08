@@ -2,7 +2,7 @@
 	"author": "Jeremy Martin <jmar777@gmail.com> (http://twitter.com/jmar777)",
 	"name": "connect-http-signature",
 	"description": "Connect middleware wrapper for Joyent's HTTP Signature reference implementation",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"repository": {
 		"type" : "git",
 		"url" : "git://github.com/jmar777/connect-http-signature.git"
