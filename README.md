@@ -26,8 +26,9 @@ meet the needs of a range of authentication requirements.
 The `verify` middleware component simply verifies whether or not the request has a valid HTTP Signature.
 The request object is decorated with a `signature` property, that can be inspected by middleware components
 later on for authorization decisions.  The `verify` middleware component only has one required option: `pub`.
-This property specificies the public key to use for request verification. Any additional options will be passed
-to node-http-signature's `parseRequest` method.
+This property specificies the public key to use for request verification.  Alternatively, `pub` can be
+specified as an Array, in which case each item is a public key to be tried sequentially.  Any additional
+options will be passed to node-http-signature's `parseRequest` method.
 
 Basic usage:
 
