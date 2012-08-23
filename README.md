@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/jmar777/connect-http-signature.png)](http://travis-ci.org/jmar777/connect-http-signature)
 # Connect HTTP Signature
 
 connect-http-signature is a [Connect](https://github.com/senchalabs/connect) middleware wrapper for
