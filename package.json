@@ -9,7 +9,7 @@
 	},
 	"main": "lib/index.js",
 	"dependencies": {
-		"http-signature": "0.9.x"
+		"http-signature": "0.10.x"
 	},
 	"devDependencies": {
 		"mocha": ">=0.3.6",
